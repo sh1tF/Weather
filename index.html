@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Погода</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="card">
+      <header class="topbar">
+        <div>
+          <h1 class="title">Погода</h1>
+        </div>
+
+        <details class="settings-menu" id="settingsMenu">
+          <summary class="settings-btn" aria-label="Открыть настройки">⚙</summary>
+
+          <div class="menu-panel">
+            <label class="field">
+              <span>Акцент</span>
+              <input id="accentPicker" type="color" value="#7c9cff" />
+            </label>
+
+            <label class="field">
+              <span>Тема</span>
+              <select id="themeSelect">
+                <option value="auto">Авто</option>
+                <option value="light">Светлая</option>
+                <option value="dark">Тёмная</option>
+              </select>
+            </label>
+          </div>
+        </details>
+      </header>
+
+      <div class="controls">
+        <input id="cityInput" type="text" placeholder="Город, например: Ulyanovsk" />
+        <button id="searchBtn" class="btn btn-primary">Поиск</button>
+        <button id="geoBtn" class="btn btn-secondary">Геолокация</button>
+      </div>
+
+      <div class="controls controls-secondary">
+        <input id="dateInput" type="date" />
+        <select id="modeSelect">
+          <option value="current">Текущая погода</option>
+          <option value="daily">Погода на дату</option>
+        </select>
+      </div>
+
+      <div id="status" class="status">Готово.</div>
+      <div id="error" class="error"></div>
+
+      <section class="weather" id="weatherBox">
+        <div id="cityName" class="city">—</div>
+        <div id="desc" class="desc">—</div>
+        <div id="temp" class="temp">—</div>
+        <div id="meta" class="meta"></div>
+      </section>
+
+      <section class="sky-card" id="skyCard">
+        <div class="sky-icon" id="skyIcon"></div>
+        <div class="sky-text" id="skyText">—</div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
