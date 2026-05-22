@@ -100,14 +100,14 @@ function skyForCode(code) {
         <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
           <circle cx="32" cy="32" r="11" fill="currentColor"/>
           <g stroke="currentColor" stroke-width="3" stroke-linecap="round">
-            <path d="M32 6v8"/>
-            <path d="M32 50v8"/>
-            <path d="M6 32h8"/>
-            <path d="M50 32h8"/>
-            <path d="M14.5 14.5l5.6 5.6"/>
-            <path d="M43.9 43.9l5.6 5.6"/>
-            <path d="M49.5 14.5l-5.6 5.6"/>
-            <path d="M19.6 43.9l-5.6 5.6"/>
+            <path d="M 32 6 v 8"/>
+            <path d="M 32 50 v 8"/>
+            <path d="M 6 32 h 8"/>
+            <path d="M 50 32 h 8"/>
+            <path d="M 14.5 14.5 l 5.6 5.6"/>
+            <path d="M 43.9 4.9 l 5.6 5.6"/>
+            <path d="M 49.5 14.5 l -5.6 5.6"/>
+            <path d="M 19.6 43.9 l -5.6 5.6"/>
           </g>
         </svg>
       `
@@ -121,7 +121,7 @@ function skyForCode(code) {
         <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
           <circle cx="23" cy="23" r="9" fill="currentColor"/>
           <g fill="currentColor" opacity="0.95">
-            <path d="M40 43a11 11 0 0 0 0-22c-1.4 0-2.8.3-4 .8A14 14 0 0 0 9 28a9 9 0 0 0 1 18h30z"/>
+            <path d="M 40 46 a 11 11 0 0 0 -2 -23 c -1.4 0 -2.8 0.3 -4 0.8 A 14 14 0 0 0 9 28 a 9 9 0 0 0 1 18 h 30 z"/>
           </g>
         </svg>
       `
@@ -134,8 +134,7 @@ function skyForCode(code) {
       svg: `
         <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
           <g fill="currentColor">
-            <path d="M18 44a10 10 0 0 1 1-20 13 13 0 0 1 25 4 9 9 0 0 1 0 18H18z"/>
-            <path d="M12 49h36"/>
+            <path d="M 18 44 a 10 10 0 0 1 1 -20 a 13 13 0 0 1 25 4 a 9 9 0 0 1 0 18 H 44 z"/>
           </g>
         </svg>
       `
@@ -149,7 +148,7 @@ function skyForCode(code) {
         <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
           <circle cx="22" cy="22" r="8" fill="currentColor"/>
           <g fill="currentColor">
-            <path d="M40 38a11 11 0 0 0 0-22c-1.4 0-2.7.3-3.9.8A14 14 0 0 0 9 26a9 9 0 0 0 1 18h30z"/>
+            <path d="M 40 44 a 11 11 0 0 0 0 -22 c -1.4 0 -2.7 0.3 -3.9 0.8 A 14 14 0 0 0 9 26 a 9 9 0 0 0 1 18 h 30 z"/>
             <path d="M24 46c0 3-2 5-2 5s-2-2-2-5a2 2 0 0 1 4 0z"/>
             <path d="M34 46c0 3-2 5-2 5s-2-2-2-5a2 2 0 0 1 4 0z"/>
           </g>
@@ -164,7 +163,7 @@ function skyForCode(code) {
       svg: `
         <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
           <g fill="currentColor">
-            <path d="M18 40a10 10 0 0 1 1-20 13 13 0 0 1 25 4 9 9 0 0 1 0 18H18z"/>
+            <path d="M 18 40 a 10 10 0 0 1 1 -20 a 13 13 0 0 1 25 4 a 9 9 0 0 1 0 18 H 44 z"/>
             <circle cx="24" cy="50" r="2"/>
             <circle cx="32" cy="50" r="2"/>
             <circle cx="40" cy="50" r="2"/>
@@ -180,8 +179,8 @@ function skyForCode(code) {
       svg: `
         <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
           <g fill="currentColor">
-            <path d="M18 40a10 10 0 0 1 1-20 13 13 0 0 1 25 4 9 9 0 0 1 0 18H18z"/>
-            <path d="M31 40h8l-6 12h5l-4 10"/>
+            <path d="M 18 40 a 10 10 0 0 1 1 -20 a 13 13 0 0 1 25 4 a 9 9 0 0 1 0 18 H 44 z"/>
+            <path d="M 33 42 L 33 42 h 5 L 29 58 L 32 45 L 27 45 L 36 30 L 33 42"/>
           </g>
         </svg>
       `
@@ -194,7 +193,7 @@ function skyForCode(code) {
       <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
         <circle cx="22" cy="22" r="8" fill="currentColor"/>
         <g fill="currentColor">
-          <path d="M40 40a11 11 0 0 0 0-22c-1.4 0-2.7.3-3.9.8A14 14 0 0 0 9 26a9 9 0 0 0 1 18h30z"/>
+          <path d="M 40 44 a 11 11 0 0 0 0 -22 c -1.4 0 -2.7 0.3 -3.9 0.8 A 14 14 0 0 0 9 26 a 9 9 0 0 0 1 18 h 0 z"/>
         </g>
       </svg>
     `
@@ -224,7 +223,7 @@ async function geocodeCity(city) {
 }
 
 async function reverseGeocode(lat, lon) {
-  const url = `https://geocoding-api.open-meteo.com/v1/reverse?latitude=${lat}&longitude=${lon}&language=ru&format=json`;
+  const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`;
   const r = await fetch(url);
   if (!r.ok) return null;
   const data = await r.json();
