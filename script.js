@@ -105,7 +105,7 @@ function skyForCode(code) {
             <path d="M 6 32 h 8"/>
             <path d="M 50 32 h 8"/>
             <path d="M 14.5 14.5 l 5.6 5.6"/>
-            <path d="M 43.9 4.9 l 5.6 5.6"/>
+            <path d="M 43.9 43.9 l 5.6 5.6"/>
             <path d="M 49.5 14.5 l -5.6 5.6"/>
             <path d="M 19.6 43.9 l -5.6 5.6"/>
           </g>
@@ -143,14 +143,15 @@ function skyForCode(code) {
 
   if ((code >= 51 && code <= 67) || (code >= 80 && code <= 82)) {
     return {
-      text: "Солнце за облаками и дождь",
+      text: "Облачно с дождем",
       svg: `
         <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
           <circle cx="22" cy="22" r="8" fill="currentColor"/>
           <g fill="currentColor">
             <path d="M 40 44 a 11 11 0 0 0 0 -22 c -1.4 0 -2.7 0.3 -3.9 0.8 A 14 14 0 0 0 9 26 a 9 9 0 0 0 1 18 h 30 z"/>
-            <path d="M24 46c0 3-2 5-2 5s-2-2-2-5a2 2 0 0 1 4 0z"/>
-            <path d="M34 46c0 3-2 5-2 5s-2-2-2-5a2 2 0 0 1 4 0z"/>
+            <path d="M 16 46 c 1 4 0 5 -2 5 s -1 -3 2 -5 z"/>
+            <path d="M 24 46 c 1 4 0 5 -2 5 s -1 -3 2 -5 z"/>
+            <path d="M 32 46 c 1 4 0 5 -2 5 s -1 -3 2 -5 z"/>
           </g>
         </svg>
       `
