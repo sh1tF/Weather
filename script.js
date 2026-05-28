@@ -224,11 +224,31 @@ async function geocodeCity(city) {
 }
 
 async function reverseGeocode(lat, lon) {
-  const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`;
-  const r = await fetch(url);
+  const url = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lon}&addressdetails=1&zoom=10`;
+  const r = await fetch(url, {
+    headers: {
+      "Accept": "application/json"
+    }
+  });
+
   if (!r.ok) return null;
+
   const data = await r.json();
-  return data.results && data.results[0] ? data.results[0] : null;
+  const address = data.address || {};
+
+  return {
+    name:
+      address.city ||
+      address.town ||
+      address.village ||
+      address.hamlet ||
+      address.suburb ||
+      address.county ||
+      "Unknown",
+    admin1: address.state || address.county || "",
+    country: address.country || "",
+    displayName: data.display_name || ""
+  };
 }
 
 function validDateOrToday() {
